@@ -10,11 +10,24 @@ public class ex01 {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner ( System.in ) ;
 		System.out.print ( "¿é¤J¤@­Ón=" ) ;
-		int n = scn.nextInt();
-		var ( n ) ;
+		int a = scn.nextInt();
+		int b [ ] = new int [ a ] ;
+		for ( int c = 0 ; c < a ; c ++ ) {
+			b [ c ] = scn.nextInt ( ) ;
 }
-		public static void var ( int n ) {
+		System.out.println ( fun ( b , a ) ) ;
+}
+		public static float fun ( int b [ ], int a ) {
 		Scanner scn = new Scanner ( System.in ) ;
-
+		float sum =  0 ;
+		float d = 0 ;
+		for ( int x = 0 ; x < b.length ; x ++ ) {
+			sum += b [ x ] ;
+}
+		for ( int j = 0 ; j < b.length ; j ++ ) {
+			d = ( float ) ( d + ( Math.pow ( b [ j ] - sum / a , 2 ) ) ) ;
+}
+		float y = d / a ;
+		return y ;
 	}
 }
